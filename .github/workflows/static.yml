@@ -38,8 +38,7 @@ jobs:
       - name: Install dependencies
         run: npm install # or yarn install
       - name: Build
-        run: npm run build # Replace with your build command
-        run: ls
+        run: npm run build | ls # Replace with your build command
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
