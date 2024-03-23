@@ -38,20 +38,14 @@ jobs:
       - name: Install dependencies
         run: npm install # or yarn install
       - name: Build
-        run: |
-          npm run build # Replace with your build command
-          # Move build artifacts to a temporary directory
-          mkdir temp_build
-          mv <your-build-output-directory>/* temp_build
+        run: npm run build # Replace with your build command
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: site
-          path: temp_build
+          # Upload entire repository
+          path: "."
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact-name: site
