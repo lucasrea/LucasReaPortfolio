@@ -5,7 +5,10 @@ import ReactDOM from "react-dom/client";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
-  <div>Hello world</div>
+  <div>
+    <h1>LUCAS REA Page</h1>
+    <h2>HELLO WORLD</h2>
+  </div>
   // {/* </React.StrictMode> */}
   // ,
 );
