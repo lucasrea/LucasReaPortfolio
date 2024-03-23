@@ -12,6 +12,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <h1>LUCAS REA Page</h1>
     <h2>HELLO WORLD</h2>
     <h3>another code change</h3>
+    <h1>LUCAS REA Page</h1>
+    <h2>HELLO WORLD</h2>
+    <h3>another code change</h3>
+    <h1>LUCAS REA Page</h1>
+    <h2>HELLO WORLD</h2>
+    <h3>another code change</h3>
+    <h1>LUCAS REA Page</h1>
+    <h2>HELLO WORLD</h2>
+    <h3>another code change</h3>
+    <h1>LUCAS REA Page</h1>
+    <h2>HELLO WORLD</h2>
+    <h3>another code change</h3>
   </div>
   // {/* </React.StrictMode> */}
   // ,
