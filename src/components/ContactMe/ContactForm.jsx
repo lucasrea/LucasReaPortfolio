@@ -17,6 +17,7 @@ const ContactForm = () => {
   } = useForm({mode: "all"});
 
   const onSubmit = (data) => {
+    console.log(formRef.current);
     setIsSending(true);
     emailjs
       .sendForm(
@@ -32,6 +33,7 @@ const ContactForm = () => {
           reset();
         },
         (error) => {
+          console.log(error)
           toast.error("Error Sending email. Try again in sometime.");
         }
       )

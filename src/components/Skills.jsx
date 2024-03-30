@@ -1,15 +1,8 @@
 import {forwardRef} from "react";
 import {
-  FaAws,
-  FaNodeJs,
   FaReact,
   SiDocker,
-  SiDotnet,
-  SiFirebase,
-  SiGraphql,
-  SiTailwindcss,
   TbBrandMongodb,
-  TbBrandTypescript,
 } from "./Icons";
 import ScrollButton from "./ScrollButton";
 import SkillCard from "./SkillCard";

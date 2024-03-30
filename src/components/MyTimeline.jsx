@@ -34,13 +34,6 @@ const useStyles = {
 const MyTimeline = () => {
 return (
     <Timeline position="alternate">
-       {/* <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent></TimelineContent>
-      </TimelineItem> */}
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
@@ -154,6 +147,29 @@ return (
             Transfer to DCGPU @ AMD
           </Typography>
           {/* <Typography>Develop automated data-engineering piplines for AI/HPC performance analysis.</Typography> */}
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="white"
+        >
+          <b>September 2024</b>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary"> 
+           <FaUniversity />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 , color:"white"}}>
+        <Typography variant="h6" component="span">
+            Start M.Eng Computer Engineering @ UofT 
+          </Typography>
+          {/* <Typography>B.A.Sc Computer Egnineering @ University of Toronto</Typography> */}
         </TimelineContent>
       </TimelineItem>
     </Timeline>

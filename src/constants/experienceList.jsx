@@ -27,7 +27,7 @@ import { CgCPlusPlus } from "react-icons/cg";
       title:  {icon: <BsAmd />, name:"AMD"},
       role:  "Sr. SDE",
       dates: {dates: <span style={{ color: 'red' }}>Sept. 2022 - present</span>},
-      description: `DESC`,
+      description: `Develop data isualization tools for analyzing AI GPU performance. Drive enhancements to the data engineering pipeline for competitive and non-competitive analysis.`,
       techStack: [
         {name: "React", icon: <FaReact className="text-xl" />},
         {name: "Javascript", icon: <SiJavascript className="text-xl" />},
@@ -41,7 +41,7 @@ import { CgCPlusPlus } from "react-icons/cg";
       title:  {icon: <BsAmd />, name:"AMD"},
       role:  "SDE 2",
       dates: "May 2021 - Sept. 2022",
-      description: `DESC`,
+      description: `Developed a cloud engineering pipeline for Signal Integrity simulation tools. Automated post-simulation data collected provided analytics to drive engineering decisions.`,
       techStack: [
         {name: "Python", icon: <FaPython className="text-xl" />},
         {name: "MongoDB", icon: <SiMongodb className="text-xl" />},
@@ -53,7 +53,7 @@ import { CgCPlusPlus } from "react-icons/cg";
       title:  {icon: <BsAmd />, name:"AMD"},
       role:  "SDE Internship",
       dates: "May 2019 - May. 2020",
-      description: `DESC`,
+      description: `Enhanced multimedia test apps to help in meaasing encode and decode quality for MacOS drivers - targeting video codes like AVC and HEVC.`,
       techStack: [
         {name: "Python", icon: <FaPython className="text-xl" />},
         {name: "SQL", icon: <SiMysql className="text-xl" />},

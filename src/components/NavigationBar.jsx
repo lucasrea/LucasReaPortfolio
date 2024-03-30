@@ -12,8 +12,6 @@ import {
   FcPortraitMode,
 } from "./Icons";
 
-import logo from "../assets/logo.svg";
-import logoWhite from "../assets/logo-white.svg";
 import { FcBriefcase, FcCommandLine, FcHome, FcPhoneAndroid, FcSupport } from "react-icons/fc";
 
 const NavigationBar = ({summaryRef, skillRef, aboutMeRef, projectsRef, contactMeRef, experienceRef, mainRef}) => {
@@ -91,22 +89,6 @@ const NavigationBar = ({summaryRef, skillRef, aboutMeRef, projectsRef, contactMe
   return (
     <header className="w-full fixed top-0 z-[1000] dark:bg-black bg-white">
       <nav className="bg-white bg-opacity-70 dark:bg-black dark:bg-opacity-70 shadow-lg flex items-center justify-between px-10 h-16 sm:h-24 md:h-16">
-        <h1 className="text-2xl md:text-3xl text-tertiary dark:text-white">
-          <motion.div
-            variants={slideIn("left", "spring", 0.5, 0.5)}
-            initial={"hidden"}
-            whileInView={"show"}
-            viewport={{once: true}}
-          >
-            <a
-              className="cursor-pointer flex gap-2 justify-center items-center hover:text-primary"
-              onClick={() => scrollIntoView(summaryRef)}
-            >
-              <img src={logo} alt="logo" className="h-10 sm:12 dark:hidden" />
-              <img src={logoWhite} alt="logo" className="hidden h-10 sm:12 dark:flex" />
-            </a>
-          </motion.div>
-        </h1>
         <div className="flex gap-6">
           <motion.ul
             variants={slideIn("up", "spring", 0.5, 0.5)}

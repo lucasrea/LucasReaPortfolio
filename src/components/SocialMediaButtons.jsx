@@ -1,6 +1,6 @@
 import React from "react";
 import {BsGithub, BsLinkedin, MdDownloadForOffline} from "./Icons";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/resume.pdf"
 import {motion} from "framer-motion";
 import {colorCodeContainer, fadeInRotateX} from "../constants/motion";
 
@@ -35,6 +35,14 @@ const SocialMediaButtons = () => {
                    text-tertiary dark
                     rounded-md w-8 h-8 hover:scale-110 duration-200 cursor-pointer"
           title="LinkedIn Profile"
+        />
+      </motion.a>
+      <motion.a variants={fadeInRotateX()} href={resume} download className="w-lg">
+        <MdDownloadForOffline
+          className="text-xl md:text-5xl
+                   text-tertiary text-white
+                    rounded-md w-10 h-10 hover:scale-110 hover:w-full duration-200 cursor-pointer"
+          title="Resume Download"
         />
       </motion.a>
     </motion.div>

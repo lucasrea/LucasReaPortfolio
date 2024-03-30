@@ -1,7 +1,8 @@
 import {motion, useMotionTemplate, useMotionValue} from "framer-motion";
 import {BsGithub, CgWebsite} from "../Icons";
+import { FaMedium } from "react-icons/fa";
 
-const Slide = ({title, role, dates, description, githubURL, liveURL, techStack}) => {
+const Slide = ({title, role, dates, description, githubURL, liveURL, articleURL, techStack}) => {
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
 
@@ -88,6 +89,7 @@ const Slide = ({title, role, dates, description, githubURL, liveURL, techStack})
               <BsGithub />
               <span className="text-gray-600 dark:text-white">Github</span>
             </a>
+            {liveURL && 
             <a
               href={liveURL}
               target="_blank"
@@ -101,6 +103,22 @@ const Slide = ({title, role, dates, description, githubURL, liveURL, techStack})
               <CgWebsite />
               <span className="text-gray-600 dark:text-white">Live</span>
             </a>
+            }
+            {articleURL && 
+              <a
+              href={articleURL}
+              target="_blank"
+              className="w-full
+                    bg-white  dark:bg-gray-700 dark:text-white
+                      rounded-lg p-2
+                      flex gap-2 justify-center items-center
+                    hover:bg-gray-200
+                      dark:hover:bg-gray-600 border border-gray-600 dark:border-gray-400"
+            >
+              <FaMedium />
+              <span className="text-gray-600 dark:text-white">Article</span>
+            </a>
+            }
           </div>
         }
         </div>
