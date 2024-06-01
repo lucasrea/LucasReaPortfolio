@@ -55,6 +55,7 @@ export const projects = [
   {
     title: { name: "EEG Artifact Detection" },
     description: `4th year undergraduate capstone project - aimed at using a recurrent CNN to detect EEG artifacts providing enhanced seizure detection.`,
+    githubURL: "https://github.com/ChrisDryden/ECE496",
     techStack: [
       { name: "Python", icon: <FaPython className="text-xl" /> },
       { name: "Numpy", icon: <SiNumpy className="text-xl" /> },
