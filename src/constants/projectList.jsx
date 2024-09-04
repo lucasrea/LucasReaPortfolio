@@ -53,6 +53,16 @@ const Clerk = () => {
 
 export const projects = [
   {
+    title: { name: "GlizzyNet" },
+    description: `Computer vision image segmentation project. Fine-tuning of a pre-trained model to segment images of hot dogs.`,
+    githubURL: "https://github.com/lucasrea/GlizzyNet",
+    techStack: [
+      { name: "Python", icon: <FaPython className="text-xl" /> },
+      { name: "PyTorch", icon: <SiPytorch className="text-xl" /> },
+      { name: "Matplotlib", icon: <FcScatterPlot className="text-xl" /> },
+    ],
+  },
+  {
     title: { name: "EEG Artifact Detection" },
     description: `4th year undergraduate capstone project - aimed at using a recurrent CNN to detect EEG artifacts providing enhanced seizure detection.`,
     githubURL: "https://github.com/ChrisDryden/ECE496",
@@ -112,5 +122,5 @@ export const projects = [
       { name: "React", icon: <FaReact className="text-xl" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-xl" /> },
     ],
-  },
+  }
 ];
